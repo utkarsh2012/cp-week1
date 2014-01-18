@@ -118,6 +118,7 @@
 		BFFE1CF8188A5F7D0064376D /* tomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				BFFE1D30188A813A0064376D /* Objects */,
 				BFFE1D01188A5F7D0064376D /* IOSAppDelegate.h */,
 				BFFE1D02188A5F7D0064376D /* IOSAppDelegate.m */,
 				BFFE1D04188A5F7D0064376D /* Main.storyboard */,
@@ -125,10 +126,6 @@
 				BFFE1CF9188A5F7D0064376D /* Supporting Files */,
 				BFFE1D27188A62430064376D /* MoviesViewController.h */,
 				BFFE1D28188A62430064376D /* MoviesViewController.m */,
-				BFFE1D2A188A691D0064376D /* MovieCell.h */,
-				BFFE1D2B188A691D0064376D /* MovieCell.m */,
-				BFFE1D2D188A6E220064376D /* Movie.h */,
-				BFFE1D2E188A6E220064376D /* Movie.m */,
 			);
 			path = tomatoes;
 			sourceTree = "<group>";
@@ -160,6 +157,17 @@
 				BFFE1D1A188A5F7D0064376D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFFE1D30188A813A0064376D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BFFE1D2A188A691D0064376D /* MovieCell.h */,
+				BFFE1D2B188A691D0064376D /* MovieCell.m */,
+				BFFE1D2D188A6E220064376D /* Movie.h */,
+				BFFE1D2E188A6E220064376D /* Movie.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
