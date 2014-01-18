@@ -14,13 +14,15 @@
 		BFFE1CFF188A5F7D0064376D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1CFE188A5F7D0064376D /* main.m */; };
 		BFFE1D03188A5F7D0064376D /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1D02188A5F7D0064376D /* IOSAppDelegate.m */; };
 		BFFE1D06188A5F7D0064376D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFE1D04188A5F7D0064376D /* Main.storyboard */; };
-		BFFE1D09188A5F7D0064376D /* IOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1D08188A5F7D0064376D /* IOSViewController.m */; };
 		BFFE1D0B188A5F7D0064376D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFE1D0A188A5F7D0064376D /* Images.xcassets */; };
 		BFFE1D12188A5F7D0064376D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE1D11188A5F7D0064376D /* XCTest.framework */; };
 		BFFE1D13188A5F7D0064376D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE1CF2188A5F7D0064376D /* Foundation.framework */; };
 		BFFE1D14188A5F7D0064376D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE1CF6188A5F7D0064376D /* UIKit.framework */; };
 		BFFE1D1C188A5F7D0064376D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFFE1D1A188A5F7D0064376D /* InfoPlist.strings */; };
 		BFFE1D1E188A5F7D0064376D /* tomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1D1D188A5F7D0064376D /* tomatoesTests.m */; };
+		BFFE1D29188A62430064376D /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1D28188A62430064376D /* MoviesViewController.m */; };
+		BFFE1D2C188A691D0064376D /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1D2B188A691D0064376D /* MovieCell.m */; };
+		BFFE1D2F188A6E220064376D /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE1D2E188A6E220064376D /* Movie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		BFFE1D01188A5F7D0064376D /* IOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSAppDelegate.h; sourceTree = "<group>"; };
 		BFFE1D02188A5F7D0064376D /* IOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSAppDelegate.m; sourceTree = "<group>"; };
 		BFFE1D05188A5F7D0064376D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BFFE1D07188A5F7D0064376D /* IOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSViewController.h; sourceTree = "<group>"; };
-		BFFE1D08188A5F7D0064376D /* IOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSViewController.m; sourceTree = "<group>"; };
 		BFFE1D0A188A5F7D0064376D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFFE1D10188A5F7D0064376D /* tomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFE1D11188A5F7D0064376D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BFFE1D19188A5F7D0064376D /* tomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tomatoesTests-Info.plist"; sourceTree = "<group>"; };
 		BFFE1D1B188A5F7D0064376D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFFE1D1D188A5F7D0064376D /* tomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tomatoesTests.m; sourceTree = "<group>"; };
+		BFFE1D27188A62430064376D /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		BFFE1D28188A62430064376D /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		BFFE1D2A188A691D0064376D /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		BFFE1D2B188A691D0064376D /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		BFFE1D2D188A6E220064376D /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		BFFE1D2E188A6E220064376D /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +121,14 @@
 				BFFE1D01188A5F7D0064376D /* IOSAppDelegate.h */,
 				BFFE1D02188A5F7D0064376D /* IOSAppDelegate.m */,
 				BFFE1D04188A5F7D0064376D /* Main.storyboard */,
-				BFFE1D07188A5F7D0064376D /* IOSViewController.h */,
-				BFFE1D08188A5F7D0064376D /* IOSViewController.m */,
 				BFFE1D0A188A5F7D0064376D /* Images.xcassets */,
 				BFFE1CF9188A5F7D0064376D /* Supporting Files */,
+				BFFE1D27188A62430064376D /* MoviesViewController.h */,
+				BFFE1D28188A62430064376D /* MoviesViewController.m */,
+				BFFE1D2A188A691D0064376D /* MovieCell.h */,
+				BFFE1D2B188A691D0064376D /* MovieCell.m */,
+				BFFE1D2D188A6E220064376D /* Movie.h */,
+				BFFE1D2E188A6E220064376D /* Movie.m */,
 			);
 			path = tomatoes;
 			sourceTree = "<group>";
@@ -251,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFE1D03188A5F7D0064376D /* IOSAppDelegate.m in Sources */,
-				BFFE1D09188A5F7D0064376D /* IOSViewController.m in Sources */,
 				BFFE1CFF188A5F7D0064376D /* main.m in Sources */,
+				BFFE1D2F188A6E220064376D /* Movie.m in Sources */,
+				BFFE1D2C188A691D0064376D /* MovieCell.m in Sources */,
+				BFFE1D29188A62430064376D /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

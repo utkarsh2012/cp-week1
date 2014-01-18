@@ -1,5 +1,5 @@
 //
-//  IOSViewController.h
+//  MoviesViewController.h
 //  tomatoes
 //
 //  Created by Utkarsh Sengar on 1/17/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IOSViewController : UIViewController
+@interface MoviesViewController : UITableViewController
 
 @end
