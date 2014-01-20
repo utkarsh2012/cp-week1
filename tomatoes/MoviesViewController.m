@@ -7,6 +7,7 @@
 //
 
 #import "MoviesViewController.h"
+#import "MovieDetailViewController.h"
 #import "MovieCell.h"
 #import "Movie.h"
 #import "UIImageView+AFNetworking.h"
@@ -38,6 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Movies";
 	// Do any additional setup after loading the view.
 }
 
@@ -85,7 +87,8 @@
             }
             [movie_holder setObject:movie[@"title"] forKey:@"title"];
             [movie_holder setObject:movie[@"synopsis"] forKey:@"synopsis"];
-            [movie_holder setObject:@"http://www.williamhadams.com/wp-content/uploads/2013/06/Superman-Poster.jpg" forKey:@"image"];
+            [movie_holder setObject:movie[@"posters"][@"original"] forKey:@"image"];
+            //[movie_holder setObject:@"http://www.williamhadams.com/wp-content/uploads/2013/06/Superman-Poster.jpg" forKey:@"image"];
             Movie *movie_obj = [[Movie alloc] initWithDictionary:movie_holder];
             [movies addObject:movie_obj];
         }
@@ -93,6 +96,15 @@
         self.movies = movies;
         [self.tableView reloadData];
     }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UITableViewCell *selectedCell = (UITableViewCell *)sender;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
+    Movie *movie = self.movies[indexPath.row];
+    
+    MovieDetailViewController *movieDetailViewController = (MovieDetailViewController *)segue.destinationViewController;
+    movieDetailViewController.movie = movie;
 }
 
 @end
