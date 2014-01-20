@@ -4,6 +4,7 @@
 4. Async image load
 5. Pods, using external libs like AFNetworking
 6. Segue
+7. Pull to refresh and progress bar
 
 
 Useful:  
