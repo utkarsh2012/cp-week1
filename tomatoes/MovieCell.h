@@ -13,6 +13,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *movieTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *movieSynopsisLabel;
 @property (nonatomic, weak) IBOutlet UILabel *movieCastLabel;
-@property (nonatomic, weak) IBOutlet UIImage *movieImage;
+@property (nonatomic, weak) IBOutlet UIImageView *movieImage;
 
 @end

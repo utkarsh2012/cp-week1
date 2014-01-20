@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729347.77667"
+            timestampString = "411897181.307394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "-reload"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729347.77667"
+            timestampString = "411897181.307394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "-reload"
             landmarkType = "5">
             <Locations>
@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729966.016407"
+            timestampString = "411897181.307394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-reload"
             landmarkType = "5">
             <Locations>
@@ -134,11 +134,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729966.016407"
+            timestampString = "411897181.307394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "-reload"
             landmarkType = "5">
          </BreakpointContent>
@@ -150,11 +150,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729347.77667"
+            timestampString = "411897181.307394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-reload"
             landmarkType = "5">
          </BreakpointContent>
@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729347.77667"
+            timestampString = "411897149.53815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729347.77667"
+            timestampString = "411897149.53815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -198,11 +198,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tomatoes/MoviesViewController.m"
-            timestampString = "411729966.016407"
+            timestampString = "411897181.307394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "-reload"
             landmarkType = "5">
          </BreakpointContent>

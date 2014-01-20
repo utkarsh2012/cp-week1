@@ -9,6 +9,7 @@
 #import "MoviesViewController.h"
 #import "MovieCell.h"
 #import "Movie.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MoviesViewController ()
 @property (nonatomic, strong) NSMutableArray *movies;
@@ -52,8 +53,12 @@
     cell.movieSynopsisLabel.text = movie.synopsis;
     cell.movieCastLabel.text = movie.cast;
     
+    NSURL *url = [[NSURL alloc] initWithString:movie.image];
+    [cell.movieImage setImageWithURL:url placeholderImage:[UIImage imageNamed:@"placeholder"]];
+
     return cell;
 }
+
 
 - (void) reload{
     NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=g9au4hv6khv6wzvzgt55gpqs";
@@ -80,7 +85,7 @@
             }
             [movie_holder setObject:movie[@"title"] forKey:@"title"];
             [movie_holder setObject:movie[@"synopsis"] forKey:@"synopsis"];
-            [movie_holder setObject:@"http//ebay.com" forKey:@"image"];
+            [movie_holder setObject:@"http://www.williamhadams.com/wp-content/uploads/2013/06/Superman-Poster.jpg" forKey:@"image"];
             Movie *movie_obj = [[Movie alloc] initWithDictionary:movie_holder];
             [movies addObject:movie_obj];
         }

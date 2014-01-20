@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F0D62E56-F279-445B-8E6E-10627AB89EA8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tomatoes</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FEBAFBC2-3D7F-46C1-A7C3-60B79D0FC9B8</key>
+		<string>ssh://github.com/utkarsh2012/cp-week1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tomatoes.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FEBAFBC2-3D7F-46C1-A7C3-60B79D0FC9B8</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/utkarsh2012/cp-week1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FEBAFBC2-3D7F-46C1-A7C3-60B79D0FC9B8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FEBAFBC2-3D7F-46C1-A7C3-60B79D0FC9B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tomatoes</string>
+		</dict>
+	</array>
+</dict>
+</plist>
