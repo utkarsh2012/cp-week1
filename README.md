@@ -2,6 +2,8 @@
 2. xcode nativation in general
 3. Objective-c : Play around wiht NSMutableArray and Dictionary
 4. Async image load
+5. Pods, using external libs like AFNetworking
+6. Segue
 
 
 Useful:  

@@ -11,8 +11,13 @@
 #import "MovieCell.h"
 #import "Movie.h"
 #import "UIImageView+AFNetworking.h"
+#import "Reachability.h"
 
 @interface MoviesViewController ()
+{
+    Reachability *internetReachableFoo;
+}
+
 @property (nonatomic, strong) NSMutableArray *movies;
 - (void) reload;
 @end
@@ -40,7 +45,18 @@
 {
     [super viewDidLoad];
     self.title = @"Movies";
-	// Do any additional setup after loading the view.
+    [self testInternetConnection];
+    UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
+    
+    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
+    [refresh addTarget:self action:@selector(reload) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refresh;
+    
+    [self reload];
+}
+
+- (void)stopRefresh {
+    [self.refreshControl endRefreshing];
 }
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -68,7 +84,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSDictionary *object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        NSLog(@"%@", object);
+        //NSLog(@"%@", object);
         
         NSMutableArray *movies = [[NSMutableArray alloc] init];
         for(NSDictionary *movie in [object objectForKey:@"movies"]){
@@ -95,6 +111,7 @@
         
         self.movies = movies;
         [self.tableView reloadData];
+        [self performSelector:@selector(stopRefresh) withObject:nil afterDelay:2.5];
     }];
 }
 
@@ -105,6 +122,32 @@
     
     MovieDetailViewController *movieDetailViewController = (MovieDetailViewController *)segue.destinationViewController;
     movieDetailViewController.movie = movie;
+}
+
+// Checks if we have an internet connection or not
+- (void)testInternetConnection
+{
+    internetReachableFoo = [Reachability reachabilityWithHostname:@"www.google.com"];
+    
+    // Internet is reachable
+    internetReachableFoo.reachableBlock = ^(Reachability*reach)
+    {
+        // Update the UI on the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"Yayyy, we have the interwebs!");
+        });
+    };
+    
+    // Internet is not reachable
+    internetReachableFoo.unreachableBlock = ^(Reachability*reach)
+    {
+        // Update the UI on the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"Someone broke the internet :(");
+        });
+    };
+    
+    [internetReachableFoo startNotifier];
 }
 
 @end
