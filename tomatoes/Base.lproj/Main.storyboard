@@ -39,7 +39,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="THr-4K-myg">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="83" height="104"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srn-Yz-J4B">
@@ -67,6 +67,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="movieCastLabel" destination="X7E-Ci-8Yr" id="plu-oD-yZW"/>
+                                    <outlet property="movieImage" destination="THr-4K-myg" id="8BJ-tV-Zu6"/>
                                     <outlet property="movieSynopsisLabel" destination="LQB-Mj-9Km" id="dcp-Ci-kWP"/>
                                     <outlet property="movieTitleLabel" destination="Srn-Yz-J4B" id="jAG-Dj-02I"/>
                                     <segue destination="1SQ-rl-uXR" kind="push" id="eRu-ii-pbF"/>

@@ -73,7 +73,7 @@
     cell.movieCastLabel.text = movie.cast;
     
     NSURL *url = [[NSURL alloc] initWithString:movie.image];
-    [cell.movieImage setImageWithURL:url placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    [cell.movieImage setImageWithURL:url];
     
     return cell;
 }
