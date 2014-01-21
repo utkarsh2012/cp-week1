@@ -144,8 +144,9 @@
     {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"Someone broke the internet :(");
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Important" message: @"You are not connected to the internet.  Please try again." delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
+            [SVProgressHUD showErrorWithStatus:@"No internet connectivity!" ];
+            //UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Important" message: @"You are not connected to the internet.  Please try again." delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            //[alert show];
         });
     };
     
